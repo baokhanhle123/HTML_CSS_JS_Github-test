@@ -7,11 +7,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
     <div class="container">
-        //TO DO
+        <label for="fname"><p>First name:</p></label>
+        <input class = "cl" type="text" placeholder="Enter First name ..." id="fname" name="fname">
+        <br>
+        <label for="lname"><p>Last name:</p></label>
+        <input class = "cl" type="text" placeholder="Enter Last name ..." id="lname" name="lname">
+        <br>
+        <label for="mail"><p>Email:</p></label>
+        <input class = "cl" type="text" placeholder="Enter Mail..." id="mail" name="mail">
+        <br>
+        <label for="pwd"><p>Password:</p></label>
+        <input class = "cl" type="password" placeholder="Enter Password ..." id="pwd" name="pwd">
+        <br><br>
+        
+        <label for="bday"><p>Birthday : </p></label>
+        <select id ="day" name = "dd" >
+            <option selected disabled hidden>Day</option>
+        </select>
+        <select  id ="month" name = "mm" onchange=change_month(this)>
+            <option hidden>Month</option>
+        </select>
+        <select id ="year" name = "yyyy" onchange=change_year(this)>
+            <option selected disabled hidden>Year</option>
+        </select>
+        <br>
+
+        <label for="gder"><p>Gender:</p></label>
+        <label><input type="radio" id="male" name="gder">Male</label>
+        <label><input type="radio" id="female" name="gder"> Female</label>
+        <label><input type="radio" id="unknow" name="gder"> Unknow</label>
+        <br>
+
+        
+        <label for="cntry"><p>Country:</p></label>
+        <select id= "cntry">
+            <option>Vietnam</option>
+        </select>
+        <br>
+
+        <label for="abt" cols="40">About:</label>
+        <textarea  id="abt" name="Text1" cols="40" rows="5"></textarea>
+        <br>
+
+        <button type="submit" id="submit" onclick=submit()>Submit</button>
+        <button type="reset" id="reset" onclick=reset()>Reset</button>
     </div>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/fun.js"></script>
