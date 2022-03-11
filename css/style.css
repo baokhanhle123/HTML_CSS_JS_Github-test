@@ -1,1 +1,43 @@
-/*TO DO*/
+.container{
+    border-style: groove;
+    width: 500px;
+}
+
+input{
+    width: 300x;
+	height:30px;
+	border-radius:5px;
+	margin-left:2px;
+    position:relative;
+}
+
+label{
+    position:relative;
+    width:100px;
+    font-family:AR CENA;
+    font-size:20px;
+}
+
+#abt{
+    width: 300px;
+    height: 100px;
+}
+
+#submit, #reset{
+	margin-top  :50px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    border-width: 0px;
+    width: 80px;
+    height: 30px;
+
+}
+
+#submit{
+    background-color:cornflowerblue;
+    color: white;
+    margin-left: 30%;
+}
+#fname{
+    margin-top: 50px;
+}
