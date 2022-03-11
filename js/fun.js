@@ -135,6 +135,9 @@ function reset(){
     document.getElementById("mail").value = "";
     document.getElementById('abt').value = '';
     document.getElementById('abt').value = '';
+    document.getElementById('day').selectedIndex = 0;
+    document.getElementById('month').selectedIndex = 0;
+    document.getElementById('year').selectedIndex = 0;
     document.getElementById('male').checked = false;
     document.getElementById('female').checked = false;
     document.getElementById('unknow').checked = false;
