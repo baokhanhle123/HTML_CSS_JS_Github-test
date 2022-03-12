@@ -1,0 +1,107 @@
+/*TO DO*/
+/* reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #333;
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    position: relative;
+    margin-top: 50px;
+    width: 800px;
+    /* border-style: dashed; */
+
+}
+.heading{
+    width: 100%;
+    text-align: center;
+
+}
+.container .form{
+    width: 100%;
+    height: 20px;
+    /* border-style: dashed; */
+}
+.container .form .title{
+    width: 15%;
+    height: 20px;
+    float: left;
+    text-align: right;
+    /* border-style: dashed; */
+}
+.container .form .box{
+    width: 85%;
+    height: 20px;
+    padding-left: 10px;
+    float: left;
+    margin-bottom: 5px;
+    /* border-style: dashed; */
+
+}
+
+.container .form .box .gender{
+    width: 80%;
+    height: 20px;
+    /* border-style:dashed ; */
+    margin-top: 0px;
+}
+.container .form .box .gender .radio{
+    width: 3%;
+    height: 20px;
+    /* border-style: dashed; */
+    float: left;
+}
+.container .form .box .gender .gender_name{
+    width: 80%;
+    height: 20px;
+    /* border-style: dashed; */
+    float: left;
+}
+.container .form .box .box_info{
+    width: 80%;
+}
+.container .form .box .box_info_birthday{
+    width: 15%;
+}
+.container .form .box .box_area{
+    width: 80%;
+    height: 60px;
+}
+.footing{
+    margin-top: 10px;
+
+    text-align: center;
+}
+.footing .submit{
+    outline: none;
+    background-color: blue;
+    margin-top: 12px;
+    padding: 2px 2px;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    width: 5%;
+    cursor: pointer;
+}
+.footing .reset{
+    outline: none;
+    background-color: yellowgreen;
+    margin-top: 12px;
+    padding: 2px 2px;
+    color: #333;
+    border: none;
+    border-radius: 2px;
+    width: 5%;
+    cursor: pointer;
+}
+.space{
+    margin-bottom: 65px;
+
+}

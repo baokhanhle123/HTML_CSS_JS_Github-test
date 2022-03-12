@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kiểm tra HTML, CSS, JS, Github</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(function(){
+
+var seYear = $('#check_year');
+var date = new Date();
+var cur = date.getFullYear();
+
+
+for (i = cur; i >= 1900; i--) {
+    seYear.append('<option value="'+i+'">'+i+'</option>');
+};
+
+
+var seMonth = $('#check_month');
+
+var month=new Array();
+month[1]="January";
+month[2]="February";
+month[3]="March";
+month[4]="April";
+month[5]="May";
+month[6]="June";
+month[7]="July";
+month[8]="August";
+month[9]="September";
+month[10]="October";
+month[11]="November";
+month[12]="December";
+
+for (i = 12; i > 0; i--) {
+    seMonth.append('<option value="'+i+'">'+month[i]+'</option>');
+};
+
+
+var seDay = $('#check_day');
+for(i = 31; i>=0; i--){
+    seDay.append('<option value="'+i+'">'+i+'</option>');
+}
+});
+    </script>
+</head>
+
+<body>
+    <div class="heading"><h1>Form điền thông tin cá nhân</h1></div>
+    <div class="container">
+        <form name="frmlogin" action="" method="POST" class="form" id="form-1">
+       <div class="form">
+        <div class="title">
+            First name:
+        </div>
+        <div class="box">
+            <input type="text" id="check_first_name" name="marks" minlength="2" maxlength="30" class="box_info" placeholder="Enter first name ...">
+        </div>
+       </div>
+
+        <div class="form"> 
+        <div class="title">
+            Last name:
+        </div>
+        <div class="box">
+            <input type="text" id="check_last_name" name="marks" minlength="2" maxlength="30" class="box_info"  placeholder="Enter last name ...">
+        </div>
+       </div>
+       <div class="form">
+        <div class="title">
+            Email:
+        </div>
+        <div class="box">
+            <input type="text" minlength="2" maxlength="30" name="box_info" class="box_info" id="check_email" placeholder="Enter email ...">
+        </div>
+       </div>
+       <div class="form">
+        <div class="title">
+            Password:
+        </div>
+        <div class="box">
+            <input type="password" minlength="2" maxlength="30" name="box_info" class="box_info" id="check_password" placeholder="Enter password ...">
+        </div>
+       </div>
+       <div class="form">
+        <div class="title">
+            Birthday:
+        </div>
+        <div class="box">
+            <select name="day" class="box_info_birthday" id="check_day">
+                <option value=" " selected="selected" >Day</option>
+            </select>
+            <select name="month" class="box_info_birthday" id="check_month">
+                <option value=" " selected="selected" >Month</option>
+            </select>
+            <select name="year" class="box_info_birthday" id="check_year">
+                <option value=" " selected="selected" >Year</option>
+            </select>
+        </div>
+       </div>
+
+       <div class="form">
+        <div class="title">
+            Gender:
+        </div>
+        <div class="box">
+            <div class="gender">
+                <div class="radio">
+                    <input type="radio" name="gender" id="male" >
+                </div>
+                <div class="gender_name">
+                    Male
+                </div>
+            </div>
+            <div class="gender">
+                <div class="radio">
+                    <input type="radio" name="gender" id="female" value="2">
+                </div>
+                <div class="gender_name">
+                    Female
+                </div>
+            </div>
+            <div class="gender">
+                <div class="radio">
+                    <input type="radio" name="gender" id="unknown" value="3">
+                </div>
+                <div class="gender_name">
+                    Unknown
+                </div>
+            </div>
+        </div>
+       </div>
+       <div class="space">
+       </div>
+       <div class="form">
+        <div class="title">
+            Country:
+        </div>
+        <div class="box">
+            <select name="country" class="box_info" id="check_country">
+                <option value="" selected="selected">Other</option>
+                <option value="" selected="selected" >Lao</option>
+                <option value="" selected="selected" >Campuchia</option>
+                <option value="" selected="selected" >Vietnam</option>
+            </select>
+        </div>
+       </div>
+       <div class="form">
+        <div class="title">
+            About:
+        </div>
+        <div class="box">
+            <textarea class="box_area" id="check_about" maxlength="100">   </textarea>
+        </div>
+       </div>
+       <div class="space">
+    </div>
+    <div class="footing" >
+        <!-- <input type="button" class="submit" onclick="submit()" value="Submit"> -->
+        <input type="button" class="submit" onclick="Check()" value="Submit">
+        <input type="button" class="reset" onclick="reset()" value="Reset">
+
+    </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fun.js"></script>
+</body>
+
+</html>
